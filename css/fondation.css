@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    padding-top: 70px;
+    background-color: rgb(233,233,233);
+    height: 100%;
+    margin-bottom: 80px;
+    font-family: Agency FB,微軟正黑體;
+    background-image:url(../img/index_background.jpg);
+}
+
+#main {
+    height: 800px;
+    text-align: center;
+}
+
+/*----Navbar----*/
+
+#navbar {
+    background-color: #FFED84;
+    height: 70px;
+}
+
+#mynavbar {
+    z-index: 200;
+    background-color: #FFED84;
+}
+
+.navbar-nav {
+    float: none;
+}
+
+.navbar-nav a{
+    margin: 10px;
+    font-family: Agency FB;
+    font-size: 30PX;
+    font-weight: 700;
+    color: #54313C;
+    width: 200px;
+    text-align: center;
+}
+
+.navbar-nav a:hover {
+    background-color: aliceblue;
+    -webkit-animation-name: navbar-hover; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: navbar-hover;
+    animation-duration: 1s;
+}
+
+.navbar-logo {
+    position:absolute;
+    margin-left: 47%;
+    z-index: 1;
+}
+
+#nav-button {
+  height: 30px;
+  width: 30px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-button span {
+    background-color: #54313C;
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-button span:nth-child(1) {
+  top: 3px;
+}
+
+#nav-button span:nth-child(2),#nav-button span:nth-child(3) {
+  top: 8px;
+}
+
+#nav-button span:nth-child(4) {
+  top: 17px;
+}
+
+#nav-button.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-button.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-button.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-button.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/*----Navbar----*/
+
+#footer {
+    background-color: #3C2535;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo {
+    height: 60px;
+}
+
+.navbar-nav .logo {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.slogan {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    margin: -50px 0 0 -300px;
+    font-family: Agency FB;
+}
+
+.slogan h1 {
+    font-weight: 600;
+    font-size: 72px;
+    color: black;
+}
+
+.footer-contact {
+    float: right;
+}
+
+.footer-contact i{
+    margin: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.footer-contact i:hover {
+    color:#FFED84;
+    -webkit-animation-name: footer-hover; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: footer-hover;
+    animation-duration: 1s;
+}
+
+.footer-copy{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.footer-copy h1{
+    color: aliceblue;
+    font-size: 10px;
+}
+
+
+/*----Animations----*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes navbar-hover {
+    from {background-color: #FFED84;}
+    to { background-color:aliceblue;}
+}
+
+@-webkit-keyframes footer-hover {
+    from {color: aliceblue;}
+    to { color:#FFED84;}
+}
+
+/* Standard syntax */
+@keyframes navbar-hover {
+    from {background-color: #FFED84;}
+    to {background-color:aliceblue;}
+}
+
+@keyframes footer-hover {
+    from {color: aliceblue;}
+    to { color:#FFED84;}
+}
+
+/*----Animations----*/
+
+
+@media screen and (max-width:1200px) {
+    
+    .navbar-nav a{
+        margin-left: 70px;
+        font-size: 25px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navbar-nav a{
+        margin-left: 30px;
+        font-size: 25px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .navbar-logo {
+        margin-left: 20px;
+        position: absolute;
+        top:0;
+    }
+    
+    #main {
+        height: auto;
+    }
+    
+    .slogan {
+    position:relative;
+    left: 0;
+    margin: 0;
+    margin-top: 250px;
+    font-family: Agency FB;
+    }
+    
+    .slogan h1 {
+        font-size: 35px;
+    }
+    
+    .footer-copy {
+        width: 200px;
+    }
+    
+    #mynavbar a {
+        margin: 0px;
+        width:100%;
+    }
+}

@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#contact-main {
+    background-color: rgb(233,233,233);
+    padding-bottom: 20px;
+}
+
+.contact-welcome {
+    padding: 1px;
+    height: 200px;
+    background-image: url(../img/contact.jpg);
+    opacity: 0.7;
+}
+
+.contact-slogan {
+    padding: 1px;
+    background-image: url(../img/index_background.jpg);
+    height: 250px;
+}
+
+.contact-option {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.contact-input-name {
+    width: 300px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+
+.contact-input-email {
+    margin: 10px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.contact-say {
+    font-size: 30px;
+}
+
+.box-left {
+    margin-left: 100px;
+    float: left;
+    width: 350px;
+    padding-top: 20px; 
+    display: inline-block;
+}
+
+.box-right {
+    width: 500px;
+    padding-top: 20px; 
+    display: inline-block;
+}
+
+.contact-input-say {
+    width: 600px;
+    height: 200px;
+}
+
+.contact-submmit {
+    margin-left: 110px;
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 6px;
+    color: aliceblue;
+    background-color: #3C2535;
+}
+
+.contact-welcome h1{
+    color: aliceblue;
+    font-size: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.contact-slogan h1{
+    font-weight: 600;
+    font-size: 45px;
+    padding-top: 90px;
+    text-align: center;
+}
+
+@media screen and (max-width:770px) {
+    .contact-welcome h1{
+        color: aliceblue;
+        font-size: 40px;
+        padding-top: 80px;
+    }
+
+    .contact-slogan h1{
+        font-size: 35px;
+        padding-top: 60px;
+    }
+    
+    .contact-input-say {
+        width: 350px;
+    }
+    
+    .box-left {
+        margin-left: 0px;
+    }
+    
+    .box-right {
+        width: 350px;
+        padding-top: 20px; 
+        display: inline-block;
+    }
+}

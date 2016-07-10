@@ -1,0 +1,87 @@
+#blog-main {
+    background-color: rgb(233,233,233);
+}
+
+.blog-welcome {
+    text-align: center;
+    padding: 1px;
+    height: 100px;
+    background-image: url(../img/blog/welcom.jpg);
+}
+
+.blog-welcome h1{
+    padding-top: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.blog-slogan {
+    text-align: center;
+    padding: 1px;
+    background-image: url(../img/blog/slogan.jpg);
+    height: 150px;
+}
+
+.blog-slogan h1{
+    color: #54313C;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#blog-main {
+    background-color: rgb(233,233,233);
+}
+
+.blog-project{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 250px;
+    padding-bottom: 70px;
+}
+
+.blog-project img{
+    opacity: 0.7;
+    width: 250px;
+    height: 500px;
+    border-style:solid;
+    border-width: 3px;
+    border-color: #54313C;
+}
+
+.blog-project img:hover {
+    opacity: 1.0;
+    -webkit-animation-name: blog-hover; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: blog-hover;
+    animation-duration: 1s;
+}
+
+/*----Animations----*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blog-hover {
+    from {opacity: 0.7;}
+    to { opacity: 1.0;}
+}
+
+/* Standard syntax */
+@keyframes blog-hover {
+    from {opacity: 0.7;}
+    to {opacity: 1.0;}
+}
+
+/*----Animations----*/
+
+@media screen and (max-width:770px) {
+    .blog-welcome h1{
+        font-size: 35px;
+    }
+    
+    .blog-slogan h1{
+        padding-top: 20px;
+        font-size: 30px;
+    }    
+}
